@@ -1,0 +1,105 @@
+<define>
+name: regsamp_11.20_0.80
+nproc: 10
+nreal: 10
+</define>
+
+<pulsars>
+psr: name=J0437-4715
+psr: name=J0613-0200
+psr: name=J0711-6830
+psr: name=J1017-7156
+psr: name=J1022+1001
+psr: name=J1024-0719
+psr: name=J1045-4509
+psr: name=J1125-6014
+psr: name=J1446-4701
+psr: name=J1545-4550
+psr: name=J1600-3053
+psr: name=J1603-7202
+psr: name=J1643-1224
+psr: name=J1713+0747
+psr: name=J1730-2304
+psr: name=J1732-5049
+psr: name=J1744-1134
+psr: name=J1824-2452A
+psr: name=J1832-0836
+psr: name=J1857+0943
+psr: name=J1909-3744
+psr: name=J1939+2134
+psr: name=J2124-3358
+psr: name=J2129-5721
+psr: name=J2145-0750
+psr: name=J2241-5236
+</pulsars>
+
+<add>
+tnoise: psr=J0437-4715,alpha=-4.340,p0=7.290e-28,fc=0.01
+tnoise: psr=J0613-0200,alpha=-4.030,p0=1.563e-22,fc=0.01
+tnoise: psr=J0711-6830,alpha=-3.743,p0=9.349e-20,fc=0.01
+tnoise: psr=J1017-7156,alpha=-3.821,p0=1.743e-24,fc=0.01
+tnoise: psr=J1022+1001,alpha=-4.171,p0=5.275e-23,fc=0.01
+tnoise: psr=J1024-0719,alpha=-3.869,p0=3.926e-24,fc=0.01
+tnoise: psr=J1045-4509,alpha=-3.818,p0=6.924e-28,fc=0.01
+tnoise: psr=J1125-6014,alpha=-3.608,p0=3.421e-27,fc=0.01
+tnoise: psr=J1446-4701,alpha=-3.806,p0=2.054e-18,fc=0.01
+tnoise: psr=J1545-4550,alpha=-3.975,p0=2.413e-26,fc=0.01
+tnoise: psr=J1600-3053,alpha=-4.079,p0=2.457e-23,fc=0.01
+tnoise: psr=J1603-7202,alpha=-4.225,p0=9.603e-20,fc=0.01
+tnoise: psr=J1643-1224,alpha=-4.248,p0=2.581e-22,fc=0.01
+tnoise: psr=J1713+0747,alpha=-4.122,p0=1.223e-23,fc=0.01
+tnoise: psr=J1730-2304,alpha=-4.135,p0=2.445e-24,fc=0.01
+tnoise: psr=J1732-5049,alpha=-4.083,p0=5.945e-19,fc=0.01
+tnoise: psr=J1744-1134,alpha=-3.633,p0=2.420e-23,fc=0.01
+tnoise: psr=J1824-2452A,alpha=-3.979,p0=1.641e-18,fc=0.01
+tnoise: psr=J1832-0836,alpha=-3.935,p0=2.420e-18,fc=0.01
+tnoise: psr=J1857+0943,alpha=-3.794,p0=6.431e-24,fc=0.01
+tnoise: psr=J1909-3744,alpha=-3.663,p0=3.369e-28,fc=0.01
+tnoise: psr=J1939+2134,alpha=-4.030,p0=2.855e-28,fc=0.01
+tnoise: psr=J2124-3358,alpha=-4.374,p0=6.100e-19,fc=0.01
+tnoise: psr=J2129-5721,alpha=-4.213,p0=2.831e-18,fc=0.01
+tnoise: psr=J2145-0750,alpha=-4.331,p0=7.847e-24,fc=0.01
+tnoise: psr=J2241-5236,alpha=-4.351,p0=1.015e-23,fc=0.01
+
+</add>
+
+
+<obsRun>
+name: pks
+tel: pks
+start: 51000
+finish: 58325
+sampling: cadence=40
+sched: sched_similar_regsamp
+</obsRun>
+
+<schedule>
+name: sched_similar_regsamp
+observe: psr=J0437-4715,toaerr=2.382e-07,freq=1400
+observe: psr=J0613-0200,toaerr=2.530e-07,freq=1400
+observe: psr=J0711-6830,toaerr=4.381e-07,freq=1400
+observe: psr=J1017-7156,toaerr=1.800e-07,freq=1400
+observe: psr=J1022+1001,toaerr=2.801e-07,freq=1400
+observe: psr=J1024-0719,toaerr=2.860e-07,freq=1400
+observe: psr=J1045-4509,toaerr=2.100e-07,freq=1400
+observe: psr=J1125-6014,toaerr=3.471e-07,freq=1400
+observe: psr=J1446-4701,toaerr=4.175e-07,freq=1400
+observe: psr=J1545-4550,toaerr=2.014e-07,freq=1400
+observe: psr=J1600-3053,toaerr=3.525e-07,freq=1400
+observe: psr=J1603-7202,toaerr=1.448e-07,freq=1400
+observe: psr=J1643-1224,toaerr=2.542e-07,freq=1400
+observe: psr=J1713+0747,toaerr=1.130e-07,freq=1400
+observe: psr=J1730-2304,toaerr=1.597e-07,freq=1400
+observe: psr=J1732-5049,toaerr=1.424e-07,freq=1400
+observe: psr=J1744-1134,toaerr=3.211e-07,freq=1400
+observe: psr=J1824-2452A,toaerr=2.525e-07,freq=1400
+observe: psr=J1832-0836,toaerr=1.627e-07,freq=1400
+observe: psr=J1857+0943,toaerr=1.872e-07,freq=1400
+observe: psr=J1909-3744,toaerr=4.006e-07,freq=1400
+observe: psr=J1939+2134,toaerr=3.011e-07,freq=1400
+observe: psr=J2124-3358,toaerr=2.242e-07,freq=1400
+observe: psr=J2129-5721,toaerr=2.399e-07,freq=1400
+observe: psr=J2145-0750,toaerr=3.774e-07,freq=1400
+observe: psr=J2241-5236,toaerr=3.921e-07,freq=1400
+
+</schedule>
