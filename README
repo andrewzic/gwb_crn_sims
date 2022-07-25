@@ -1,4 +1,4 @@
-#gwb_crn_sims
+# gwb_crn_sims
 Simulated PTA datasets, processing, and analysis scripts for "Evaluating the prevalence of spurious correlations in pulsar timing array datasets" (Zic et al., 2022)
 
 A singularity container is provided: `psr_gwb.sif`. Activate using `singularity activate psr_gwb.sif` or execute using `singularity exec psr_gwb.sif python3 <scriptname>.py`
