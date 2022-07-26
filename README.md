@@ -2,7 +2,7 @@
 
 Simulated PTA datasets, processing, and analysis scripts for "Evaluating the prevalence of spurious correlations in pulsar timing array datasets" (Zic et al., 2022)
 
-A singularity container is provided: `psr_gwb.sif`. Activate using `singularity activate psr_gwb.sif` or execute using `singularity exec psr_gwb.sif python3 <scriptname>.py`
+A singularity container is provided: `psr_gwb.sif`. Activate using `singularity shell psr_gwb.sif` or execute using `singularity exec psr_gwb.sif python3 <scriptname>.py`. This package has all software and python libraries required to run the analyses. Occasionally, slurm jobs may fail when astropy attempts to download updates to IERS parameters. To fix this, enter the singularity shell interactively from a login node (`singularity shell psr_gwb.sif`), then issue `python3 -c "import enterprise_warp"`: this should result in the appropriate astropy being downloaded. 
 
 PTASimulate input files are in `ptasim_input_files/`
 scripts to run PTASimulate on generated input files: `run_ptasim_all_noise.csh` or `run_ptasim_all_noise_100r.csh `
