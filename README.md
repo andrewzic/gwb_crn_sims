@@ -9,12 +9,11 @@ scripts to run PTASimulate on generated input files: `run_ptasim_all_noise.csh` 
 
 Slurm batch scripts are located in `slurm/`
 
-Simulated datasets are in `data/`
-Note: `regsamp.tar.gz` and `100r.tar.gz` should be (recursively) inflated to access all realisations for each timing noise setup. Warning: these contain A LOT of files.
+Simulated datasets will be accessible via the CSIRO DAP, and should be downloaded into the `data/` directory in this repo.
 
 enterprise_warp params are located in `params/` (subdirectories are stored as tarballs and will need inflating to access individual files)
 
 enterprise_warp noisemodel json files are in `noisemodels/`
 
 Model comparison result summaries are located in `result_logs/` (for standard spin vs spin_common model comparison, and for experiments with the spin noise priors)
-Optimal statistic result dictionaries are stored as pickles in `enterprise_out/100r/spincommonfixgamma.tar.gz`. Parameter estimation results are in `enterprise_out/spincommon.tar.gz`.
+Optimal statistic result dictionaries and parameter estimation results are will be accessible in tarballs via the CSIRO DAP.
