@@ -1,4 +1,4 @@
-#gwb_crn_sims
+# gwb_crn_sims
 
 Simulated PTA datasets, processing, and analysis scripts for "Evaluating the prevalence of spurious correlations in pulsar timing array datasets" (Zic et al., 2022)
 
@@ -9,11 +9,11 @@ scripts to run PTASimulate on generated input files: `run_ptasim_all_noise.csh` 
 
 Slurm batch scripts are located in `slurm/`
 
-Simulated datasets will be accessible via the CSIRO DAP, and should be downloaded into the `data/` directory in this repo.
+Tarballs of the simulated datasets are accessible via the CSIRO DAP [DOI: 10.25919/3yj4-rx31](https://doi.org/10.25919/3yj4-rx31). The tarballs should be downloaded into the `data/` directory in this repo.
+
 
 enterprise_warp params are located in `params/` (subdirectories are stored as tarballs and will need inflating to access individual files)
 
 enterprise_warp noisemodel json files are in `noisemodels/`
 
 Model comparison result summaries are located in `result_logs/` (for standard spin vs spin_common model comparison, and for experiments with the spin noise priors)
-Optimal statistic result dictionaries and parameter estimation results are will be accessible in tarballs via the CSIRO DAP.
