@@ -9,7 +9,7 @@ scripts to run PTASimulate on generated input files: `run_ptasim_all_noise.csh` 
 
 Slurm batch scripts are located in `slurm/`
 
-Tarballs of the simulated datasets are accessible via the CSIRO DAP [DOI: 10.25919/3yj4-rx31](https://doi.org/10.25919/3yj4-rx31). The tarballs should be downloaded into the `data/` directory in this repo.
+Tarballs of the simulated datasets are accessible via the CSIRO DAP ([DOI: 10.25919/3yj4-rx31](https://doi.org/10.25919/3yj4-rx31)). The tarballs should be downloaded into the `data/` directory in this repo.
 
 
 enterprise_warp params are located in `params/` (subdirectories are stored as tarballs and will need inflating to access individual files)
